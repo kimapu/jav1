@@ -2,6 +2,12 @@ package solution.lab2;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author kimlee
+ *
+ */
+
 class Cynlinder {
 
     //data

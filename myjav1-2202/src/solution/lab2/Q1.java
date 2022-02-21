@@ -2,6 +2,12 @@ package solution.lab2;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author kimlee
+ *
+ */
+
 public class Q1 {
 	
 	static Scanner scan = new Scanner(System.in);
