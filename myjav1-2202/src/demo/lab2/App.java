@@ -11,26 +11,23 @@ public class App {
 	public static void doTask( int option ) {
 		switch ( option ) {
 		case 0: 
-			Demo.show();
-			break;
+			Demo.show(); break;
 		case 1: 
-			Q1.show();
-			break;
+			Q1.show(); break;
 		case 2:
-			Q2.show();
+			Q2.show(); break;
 		case 3:
-			Q3.show();
+			Q3.show(); break;
 		case 4:
-			Q4.show();
+			Q4.show(); break;
 		case 5:
-			Q5.show();
+			Q5.show(); break;
 		case 6:
-			Q6.show();
+			Q6.show(); break;
 		case 7:
-			Q7.show();
+			Q7.show(); break;
 		case 8:
-			Q8.show();
-			break;
+			Q8.show(); break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " +  option );
 		}
