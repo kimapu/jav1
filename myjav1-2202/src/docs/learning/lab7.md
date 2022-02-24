@@ -11,10 +11,10 @@ b.	Cause an exception, ArrayIndexOutOfBoundsException, display the message “Out 
 Exercise:
 
 1.	“Passing Command-Line Arguments” is a simple command-line calculator. Note that the program terminates if any operand is non-numeric. Write a program with an exception handler that deals with non-numeric operands. Your program should display a message that informs the user of the wrong operand type before existing. For example,
-|Command arguments|Output|
-|---|---|
-|3+4|3+4=7|
-|3/2+4|Wrong input: 3/2|
+|	Command arguments	|	Output	|
+|	---	|	---	|
+|	3+4	|	3+4=7	|
+|	3/2+4	|	Wrong input: 3/2	|
 
 2.	Given the Loan class, demo/lab7/Loan.java. Modify the Loan class to throw IllegalArgumentException if the loan amount, interest rate or number of years is less than or equal to zero.
 
