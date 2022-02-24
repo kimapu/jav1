@@ -1,5 +1,6 @@
 # Tutorial 5
-Lab 5 –Inheritance and Polymorphism
+## Lab 5 –Inheritance and Polymorphism
+
 Answer the following questions.
 
 Instructor-led Demo:
