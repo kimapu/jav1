@@ -1,5 +1,6 @@
 # Tutorial 10
-Lab 9 –File Input/Output
+## Lab 10 –File Input/Output
+
 Answer the following questions.
 
 Instructor-led Demo:
