@@ -1,5 +1,6 @@
 # Tutorial 3
-Lab 3 –Control Structure
+## Lab 3 –Control Structure
+
 Answer the following questions.
 
 Instructor-led Demo:
