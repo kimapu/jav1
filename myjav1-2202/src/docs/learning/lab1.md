@@ -1,5 +1,6 @@
 # Tutorial 1
-Lab 1 –Introduction to Java Programming
+## Lab 1 –Introduction to Java Programming
+
 Answer the following questions.
 
 Create a source file containing a Java program. Perform the following steps to compile the program and run it.
