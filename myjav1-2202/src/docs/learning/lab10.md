@@ -9,7 +9,7 @@ Instructor-led Demo:
 Exercise:
 
 1.	Write a program that counts the number of characters including words and lines in a file. The program prompts the user for inputting the filename. Sample output as follows:
-	<p align="center">
+	<p align="center" valign="left">
 		Please enter the filename: narrative.txt <br/>
 		File Sample.txt has <br/>
 		1732 characters, <br/>
