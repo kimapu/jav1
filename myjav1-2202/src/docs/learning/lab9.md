@@ -12,11 +12,11 @@ Exercise:
 	- What are set1 and set2 after executing set1.retainAll(set2)?
 
 2.	Suppose that list1 is a list that contains the strings “red”, “yellow”, and “green”, and that list2 is another list that contains the strings “red”, “yellow”, and “blue”. Answer the following questions.
-	a.	What are list1 and list2 after executing list1.addAll(list2)?
-	b.	What are list1 and list2 after executing list1.add(list2)?
-	c.	What are list1 and list2 after executing list1.removeAll(list2)?
-	d.	What are list1 and list2 after executing list1.remove(list2)?
-	e.	What are list1 and list2 after executing list1.retainAll(list2)?
+	- What are list1 and list2 after executing list1.addAll(list2)?
+	- What are list1 and list2 after executing list1.add(list2)?
+	- What are list1 and list2 after executing list1.removeAll(list2)?
+	- What are list1 and list2 after executing list1.remove(list2)?
+	- What are list1 and list2 after executing list1.retainAll(list2)?
 
 3.	Write a program that reads words from a text file and displays all the nonduplicate words in ascending order. 
 
