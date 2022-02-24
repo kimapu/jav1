@@ -1,5 +1,6 @@
 # Tutorial 9
-Lab 11 – Java Collection Framework
+## Lab 9 – Java Collection Framework
+
 Answer the following questions.
 
 Exercise:
