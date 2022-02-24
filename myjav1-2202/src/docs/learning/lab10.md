@@ -32,8 +32,13 @@ Hint: Read the scores one line at a time until all the lines are read. For each 
 8.	Given a Loan.java class. Rewrite the Loan class to implement Serializable. Write a program that creates five Loan objects and stores them in a file named loanobj.dat.
 
 9.	Given two files, write a program that concatenates these files and prints all content of these files. You are required to use SequenceInputStream class with its associated constructor as follows:
-SequenceInputStream(InputStream s1, InputStream s2) 
+
+	<p align="center">
+		SequenceInputStream(InputStream s1, InputStream s2)
+	</p> 
 
 10.	Give five files, modify the program in Q9 to read these files and print them on the console.
-SequenceInputStream(Enumeration<? extends InputStream> e)
-
+	
+	<p align="center">
+		SequenceInputStream(Enumeration<? extends InputStream> e)
+	</p>
