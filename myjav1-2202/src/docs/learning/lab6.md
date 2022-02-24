@@ -1,5 +1,6 @@
 # Tutorial 6
-Lab 6 –Abstract Class and Interfaces
+## Lab 6 –Abstract Class and Interfaces
+
 Answer the following questions.
 
 > *`Figure` images can be found at learning/media*
