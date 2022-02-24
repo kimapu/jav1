@@ -16,6 +16,11 @@ Exercise:
 |	3+4	|	3+4=7	|
 |	3/2+4	|	Wrong input: 3/2	|
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 2.	Given the Loan class, demo/lab7/Loan.java. Modify the Loan class to throw IllegalArgumentException if the loan amount, interest rate or number of years is less than or equal to zero.
 
 3.	Consider a Calculator program, note that number 1 and number 2 were a non-numeric string, the program would report exceptions. Modify the program with an exception handler to catch ArithmeticException (e.g., divided by 0) and NumberFormatException (e.g., input is not an integer), and display the errors in a message dialog box.
