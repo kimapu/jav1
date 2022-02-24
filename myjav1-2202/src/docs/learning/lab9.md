@@ -5,11 +5,11 @@ Answer the following questions.
 Exercise:
 
 1.	Suppose that set1 is a set that contains the strings “red”, “yellow”, and “green”, and that set2 is another set that contains the strings “red”, “yellow”, and “blue”. Answer the following questions:
-	a.	What are set1 and set2 after executing set1.addAll(set2)?
-	b.	What are set1 and set2 after executing set1.add(set2)?
-	c.	What are set1 and set2 after executing set1.removeAll(set2)?
-	d.	What are set1 and set2 after executing set1.remove(set2)?
-	e.	What are set1 and set2 after executing set1.retainAll(set2)?
+	- What are set1 and set2 after executing set1.addAll(set2)?
+	- What are set1 and set2 after executing set1.add(set2)?
+	- What are set1 and set2 after executing set1.removeAll(set2)?
+	- What are set1 and set2 after executing set1.remove(set2)?
+	- What are set1 and set2 after executing set1.retainAll(set2)?
 
 2.	Suppose that list1 is a list that contains the strings “red”, “yellow”, and “green”, and that list2 is another list that contains the strings “red”, “yellow”, and “blue”. Answer the following questions.
 	a.	What are list1 and list2 after executing list1.addAll(list2)?
