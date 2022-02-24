@@ -14,7 +14,9 @@ Exercise:
 
 4.	Write a program that calculates the future value of an investment at a given interest rate for a specified number of years. The formula for the calculation is as follows:
 
-futureValue = investmentAmount * (1 + montlyInterestRate)years*12
-Use text fields for interest rate, investment amount, and years. Display the future amount in a text field when the user clicks the Calculator button.
+> futureValue = investmentAmount * (1 + montlyInterestRate)years*12
+
+Use text fields for interest rate, investment amount, and years. 
+Display the future amount in a text field when the user clicks the Calculator button.
 
 
