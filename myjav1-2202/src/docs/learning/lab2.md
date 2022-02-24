@@ -1,5 +1,6 @@
 # Tutorial 2
-Lab 2 –Primitive Data Types and Operations
+## Lab 2 –Primitive Data Types and Operations
+
 Answer the following questions.
 
 Use Scanner class for prompting the users for input.
