@@ -10,10 +10,10 @@ Exercise:
 
 1.	Write a program that counts the number of characters including words and lines in a file. The program prompts the user for inputting the filename. Sample output as follows:
 	<p align="center">
-		Please enter the filename: narrative.txt
-		File Sample.txt has
-		1732 characters,
-		204 words and 70 lines.
+		Please enter the filename: narrative.txt <br/>
+		File Sample.txt has <br/>
+		1732 characters, <br/>
+		204 words and 70 lines. <br/>
 	</p>
 	
 2.	Suppose that a text file scores.txt contains an unspecified number of scores. Write a program that reads the scores from the file and displays their total and average. Scores are separately by blanks.
