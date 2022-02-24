@@ -1,5 +1,6 @@
 # Tutorial 7
-Lab 7 –Handling Exceptions
+## Lab 7 –Handling Exceptions
+
 Answer the following questions.
 
 Instructor-led Demo:
