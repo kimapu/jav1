@@ -2,7 +2,7 @@ package demo.lab4;
 
 import java.util.Scanner;
 
-import demo.lab3.Demo;
+
 
 public class App {
 static Scanner scan = new Scanner( System.in );

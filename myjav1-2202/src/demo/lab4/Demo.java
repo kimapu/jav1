@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Demo {
 
 	static Scanner scan = new Scanner(System.in);
-	public void show(String[] args) {
+	public static void show() {
 		 
         //object Account acc1
         Account.setType("Savings");
