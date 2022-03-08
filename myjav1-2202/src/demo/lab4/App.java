@@ -1,7 +1,12 @@
 package demo.lab4;
 
 import java.util.Scanner;
-
+import solution.lab4.*;
+import solution.lab4.q1.Q1;
+import solution.lab4.q2.Q2;
+import solution.lab4.q3.Q3;
+import solution.lab4.q4.Q4;
+import solution.lab4.q5.Q5;
 
 
 public class App {
@@ -12,15 +17,15 @@ static Scanner scan = new Scanner( System.in );
 			case 0: 
 				Demo.show(); break;
 			case 1: 
-//				Q1.show(); break;
+				Q1.show(); break;
 			case 2:
-//				Q2.show(); break;
+				Q2.show(); break;
 			case 3:
-//				Q3.show(); break;
+				Q3.show(); break;
 			case 4:
-//				Q4.show(); break;
+				Q4.show(); break;
 			case 5:
-//				Q5.show(); break;
+				Q5.show(); break;
 			default:
 				throw new IllegalArgumentException("Unexpected value: " +  option );
 		}
