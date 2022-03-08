@@ -10,7 +10,7 @@ Exercise:
 
 1.	Implement a class named Person and two subclasses of Person named Student and Employee. Make Faculty and Staff subclasses of Employee. A person has a name, address, phone number, and email address. A student has a status (freshman, sophomore, junior, or senior). Define the status as a constant (Hint: Use Enum). An employee has an office, salary, and date-hired. Define a class named MyDate that contains the fields year, month, and day. A faculty member has office hours and a rank. A staff member has a title, override the toString method in each class to display the class name and the person’s name.
 
-a.	Furthermore from Q1, make FullTime and PartTime subclasses of Staff. Full time staff has a fixed salary whereas part time staff has a salary depending on worked hour. Implement this requirement that demonstrate the earning for both staff.
+### a.	Furthermore from Q1, make FullTime and PartTime subclasses of Staff. Full time staff has a fixed salary whereas part time staff has a salary depending on worked hour. Implement this requirement that demonstrate the earning for both staff.
 
 b.	Test your program. Demonstrate the result to the instructor.
 
