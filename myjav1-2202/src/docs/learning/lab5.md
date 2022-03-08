@@ -19,6 +19,6 @@ Exercise:
 
 3.	Enabling GeometricObject comparable, Circle and Cylinder are subclasses of GeometricObject. Modify the GeometricObject class to implement the Comparable interface, define the max method in the GeometricObject class. Write a test program that uses the max method to find the larger of two circles and the larger of two cylinders.
 
-a.	Create a class named ComparableCylinder that extends Cylinder and implements Comparable. Implement the compareTo method to compare the cylinders on the basic of volume. Write a test class to find the larger of two instances of ComparableCylinder objects.
+	a.	Create a class named ComparableCylinder that extends Cylinder and implements Comparable. Implement the compareTo method to compare the cylinders on the basic of volume. Write a test class to find the larger of two instances of ComparableCylinder objects.
 
-b.	Create an interface named Colorable having an abstract method named howtoColor method. Every class of a colorable object must implement the Colorable interface. Create a class named Square that extends GeometricObject and implements Colorable. Implement howToColor to display a message on how to color the square.
+	b.	Create an interface named Colorable having an abstract method named howtoColor method. Every class of a colorable object must implement the Colorable interface. Create a class named Square that extends GeometricObject and implements Colorable. Implement howToColor to display a message on how to color the square.
