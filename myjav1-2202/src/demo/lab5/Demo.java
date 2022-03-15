@@ -18,9 +18,27 @@ public class Demo {
 		savings.balance = scan.nextDouble();
 		System.out.println("Current balance: "+savings.balance);
 
-		// deposit 10000
-		System.out.println( "\nEnter deposit amount: " );
-		savings.deposit( scan.nextDouble() );
+		System.out.println( "\n>>TRANSACTION TYPE..." );
+		System.out.println( "1) Deposit" );
+		System.out.println( "2) Withdraw" );
+		System.out.println( "\nChoose? " );
+
+		switch ( scan.nextInt() ) {
+			case 1: {
+				// deposit
+				System.out.println( "\nEnter deposit amount: " );
+				savings.deposit( scan.nextDouble() );
+				break;
+			}
+			case 2: {
+				//withdraw
+				System.out.println( "\nEnter withdraw amount: " );
+				savings.withdraw( scan.nextDouble() );
+				break;
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value");
+		}
 		System.out.println("\nNew balance: " + savings.balance);
 
 		System.out.println("\nDone...");
