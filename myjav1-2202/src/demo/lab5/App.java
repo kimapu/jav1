@@ -2,7 +2,6 @@ package demo.lab5;
 
 import java.util.Scanner;
 
-import demo.lab5.Demo;
 import solution.lab5.*;
 
 public class App {
@@ -45,10 +44,6 @@ public class App {
     	System.out.println( "1) Question 1" );
     	System.out.println( "2) Question 2" );
     	System.out.println( "3) Question 3" );
-    	System.out.println( "4) Question 4" );
-    	System.out.println( "5) Question 5" );
-    	System.out.println( "6) Question 6" );
-    	System.out.println( "7) Question 7" );
     	System.out.println();
     }
 	
