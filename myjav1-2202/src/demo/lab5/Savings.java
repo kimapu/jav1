@@ -18,6 +18,13 @@ public class Savings extends Account{
             super.withdraw(amount);
         }
     }
+
+    //overloading method
+    public void withdraw(String amount){
+    	double amt = Double.parseDouble(amount);
+        this.withdraw(amt);
+    }
+    
     
     //Another mechanism for implementing polymorhism
         //overloading method...
