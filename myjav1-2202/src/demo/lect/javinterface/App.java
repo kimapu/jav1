@@ -15,6 +15,8 @@ public class App {
 		System.out.println( s1 instanceof Student );
 		System.out.println( s1 instanceof Comparable );
 		
+		System.out.println( Student.class.isInstance(s1) ); //alternative instanceof operator
+		
 	}
 
 }
