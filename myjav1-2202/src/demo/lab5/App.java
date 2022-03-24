@@ -3,6 +3,9 @@ package demo.lab5;
 import java.util.Scanner;
 
 import solution.lab5.*;
+import solution.lab5.q1.Q1;
+import solution.lab5.q2.Q2;
+import solution.lab5.q3.Q3;
 
 public class App {
 
