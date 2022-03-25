@@ -12,7 +12,7 @@ public class Demo {
         
         //object instantiation...
         FullTimer ft = new FullTimer(); //no-arg constructor method call
-        ft.setWorkload(20);
+        ft.setWorkload(42);
         ft.calcSalary();
         System.out.println( "FullTimer's pay: " + ft.getSalary() );
         
