@@ -24,7 +24,7 @@ public class Demo {
     	for (int i = 0; i < arr.length; i++) {
 			arr[i] = Math.abs(new Random().nextInt());
 		}
-    	System.out.println( "> Array initialised randomly!" );
+    	System.out.println( "> Array with 100 elements, initialised randomly!" );
     	
     }
     
