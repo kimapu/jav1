@@ -2,6 +2,11 @@ package demo.lab6;
 
 import java.util.Scanner;
 
+import solution.lab6.q1.Q1;
+import solution.lab6.q2.Q2;
+import solution.lab6.q3.Q3;
+import solution.lab6.q4.Q4;
+
 
 public class App {
 
@@ -12,13 +17,13 @@ public class App {
 			case 0: 
 				Demo.show(); break;
 			case 1: 
-//				Q1.show(); break;
+				Q1.show(); break;
 			case 2:
-//				Q2.show(); break;
+				Q2.show(); break;
 			case 3:
-//				Q3.show(); break;
+				Q3.show(); break;
 			case 4:
-//				Q4.show(); break;
+				Q4.show(); break;
 
 			default:
 				throw new IllegalArgumentException("Unexpected value: " +  option );
