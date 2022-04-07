@@ -1,4 +1,4 @@
-package demo.lab7;
+package solution.lab7.q2;
 
 import java.util.Date;
 
@@ -10,6 +10,10 @@ public class Loan {
 
 	public Loan(double annualIntrestRate, double loanAmount, int numberOfYears, Date loanDate) {
 		super();
+		if( loanAmount < 0 || annualIntrestRate < 0 || numberOfYears < 0) 
+		{
+			throw new IllegalArgumentException("> Negetive value found!");
+		}
 		this.annualIntrestRate = annualIntrestRate;
 		this.loanAmount = loanAmount;
 		this.numberOfYears = numberOfYears;
@@ -21,6 +25,10 @@ public class Loan {
 	}
 
 	public void setAnnualIntrestRate(double annualIntrestRate) {
+		if( annualIntrestRate < 0) 
+		{
+			throw new IllegalArgumentException("> Negetive value found!");
+		}
 		this.annualIntrestRate = annualIntrestRate;
 	}
 
@@ -29,6 +37,10 @@ public class Loan {
 	}
 
 	public void setLoanAmount(double loanAmount) {
+		if( loanAmount < 0 ) 
+		{
+			throw new IllegalArgumentException("> Negetive value found!");
+		}
 		this.loanAmount = loanAmount;
 	}
 
@@ -37,6 +49,10 @@ public class Loan {
 	}
 
 	public void setNumberOfYears(int numberOfYears) {
+		if( numberOfYears < 0) 
+		{
+			throw new IllegalArgumentException("> Negetive value found!");
+		}
 		this.numberOfYears = numberOfYears;
 	}
 
@@ -48,4 +64,11 @@ public class Loan {
 		this.loanDate = loanDate;
 	}
 
+	@Override
+	public String toString() {
+		return "Loan [annualIntrestRate=" + annualIntrestRate + ", loanAmount=" + loanAmount + ", numberOfYears="
+				+ numberOfYears + ", loanDate=" + loanDate + "]";
+	}
+	
+	
 }
