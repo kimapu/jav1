@@ -13,7 +13,7 @@ public class Demo {
 
 	public static void show() {
 
-    	window1();
+    	window2();
     	
     	System.out.println("\nDone...");
 		System.out.println("====================================");
