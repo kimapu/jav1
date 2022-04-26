@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 import solution.lab9.q3.Q3;
 import solution.lab9.q4.Q4;
+import solution.lab9.q5.Q5;
+import solution.lab9.q6.Q6;
+import solution.lab9.q7.Q7;
 
 public class App {
 
@@ -22,11 +25,11 @@ public class App {
 			case 4:
 				Q4.show(); break;
 			case 5:
-//				Q5.show(); break;
+				Q5.show(); break;
 			case 6:
-//				Q6.show(); break;
+				Q6.show(); break;
 			case 7:
-//				Q7.show(); break;
+				Q7.show(); break;
 
 			default:
 				throw new IllegalArgumentException("Unexpected value: " +  option );
