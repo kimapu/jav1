@@ -2,6 +2,9 @@ package demo.lab9;
 
 import java.util.Scanner;
 
+import solution.lab9.q3.Q3;
+import solution.lab9.q4.Q4;
+
 public class App {
 
 	static Scanner scan = new Scanner( System.in );
@@ -15,9 +18,9 @@ public class App {
 			case 2:
 //				Q2.show(); break;
 			case 3:
-//				Q3.show(); break;
+				Q3.show(); break;
 			case 4:
-//				Q4.show(); break;
+				Q4.show(); break;
 			case 5:
 //				Q5.show(); break;
 			case 6:
