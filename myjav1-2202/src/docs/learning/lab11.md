@@ -4,7 +4,10 @@
 Answer the following questions.
 
 Instructor-led Demo for JavaDB:
-1.	Given any requirement, demonstrate insert, update, and select records from JavaDB in an application. This demonstration includes database, table, configuration, connection etc setup.
+1.	Given any requirement, demonstrate insert, update, and select records from database in an application. This demonstration includes database, table, configuration, connection etc setup.
+
+Support: Open source Java JDBC driver implementation that alloes Java developers and JDBC client programs to read/write MS Access databases. 
+http://ucanaccess.sourceforge.net/site.html
 
 Exercise for MS Access:
 
