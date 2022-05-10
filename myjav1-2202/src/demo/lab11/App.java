@@ -17,10 +17,13 @@ public class App {
 			case 0: 
 				Demo.show(); break;
 			case 1: 
+				System.out.println( "your attempt!" );
 //				Q1.show(); break;
 			case 2:
+				System.out.println( "your attempt!" );
 //				Q2.show(); break;
 			case 3:
+				System.out.println( "your attempt!" );
 //				Q3.show(); break;
 
 			default:
