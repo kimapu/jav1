@@ -17,8 +17,7 @@ Exercise:
 		204 words and 70 lines. <br/>
 	</p>
 	
-2.	Suppose that a text file scores.txt contains an unspecified number of scores. Write a program that reads the scores from the file and displays their total and average. Scores are separately by blanks.
-Hint: Read the scores one line at a time until all the lines are read. For each line, use StringTokenizer or Scanner to extract the scores and convert them into double values using the Double.parseDouble method.
+2.	Suppose that a text file scores.txt contains an unspecified number of scores. Write a program that reads the scores from the file and displays their total and average. Hint: Use Files API and IntSummaryStatistics.
 
 3.	Write a program that removes a specified string from a text file. Your program reads the file and generates a new file without the specified string, copies the new file to the original file. Prompt the user for a string to be removed and the filename. For example, remove “Java” string in datafile.txt.
 
