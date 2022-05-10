@@ -2,7 +2,9 @@ package demo.lab10;
 
 import java.util.Scanner;
 
-import solution.lab10.*;
+import solution.lab10.q1.Q1;
+import solution.lab10.q2.Q2;
+import solution.lab10.q3.Q3;
 
 public class App {
 
@@ -18,8 +20,6 @@ public class App {
 			Q2.show(); break;
 		case 3:
 			Q3.show(); break;
-		case 4:
-			Q4.show(); break;
 		default:
 			throw new IllegalArgumentException("Unexpected value: " +  option );
 		}
@@ -46,7 +46,6 @@ public class App {
     	System.out.println( "1) Question 1" );
     	System.out.println( "2) Question 2" );
     	System.out.println( "3) Question 3" );
-    	System.out.println( "4) Question 4" );
     	System.out.println();
     }
 	
