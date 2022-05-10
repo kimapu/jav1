@@ -25,6 +25,8 @@ public class Demo {
 			System.out.println( "1) Connect to database" );
 			System.out.println( "2) Add New" );
 			System.out.println( "3) Get All" );
+			System.out.println( "4) Update password" );
+			System.out.println( "5) Delete" );
 			System.out.println("Choose? [-99 to stop]");
     		option = scan.nextInt();
     		
@@ -35,43 +37,81 @@ public class Demo {
 				 */
 				connect( "jdbc:ucanaccess://"+ String.join("/", PATH_FOLDER, PATH_FILE) );
 				break;
-			case 2:
+			case 2:{ 
 				/*
 				 * INSERT NEW RECORD
 				 */
-				System.out.println("\nEnter your username [WITHOUT SPACE]: ");
-				String loginName = scan.next();
-				System.out.println("Enter your password [WITHOUT SPACE]: ");
-				String loginPin = scan.next();
-				String sql1 = "INSERT INTO Username(LOGIN_NAME, PASSWORD) VALUES(?,?)";
-				int row = Demo.addNew(sql1, String.join("|", loginName, loginPin));
-				System.out.println( (row > 0) ? "\n> Record is updated successfully!" : "\\n> Record is not updated!" );
+				if ( conn != null ) {
+					System.out.println("\nEnter your username [WITHOUT SPACE]: ");
+					String loginName = scan.next();
+					System.out.println("Enter your password [WITHOUT SPACE]: ");
+					String loginPin = scan.next();
+					String sql1 = "INSERT INTO Username(LOGIN_NAME, PASSWORD) VALUES(?,?)";
+					int row = Demo.addNew(sql1, String.join("|", loginName, loginPin));
+					System.out.println( (row > 0) ? "\n> Record is updated successfully!" : "\\n> Record is not updated!" );
+					
+				} else {
+					System.err.println("> Database not connected!");
+				}
 				break;
-			case 3:
+			}
+			case 3: {
 		    	/**
 		    	 * SELECT RECORDS
 		    	 */
-				List<String> accountLst = Demo.getAll("SELECT * FROM Username");
-				accountLst.stream()
-					.forEach( System.out :: println );
-				System.out.println( "\n>> Done!..." );
+				if ( conn != null ) {
+					List<String> accountLst = Demo.getAll("SELECT * FROM Username");
+					accountLst.stream()
+						.forEach( System.out :: println );
+					System.out.println( "\n>> Done!..." );	
+				} else {
+					System.err.println("> Database not connected!");
+				}
 				break;
-			case 4:
+			}
+			case 4: {
 				/**
 				 * UPDATE RECORD
 				 */
-				
-				//PLACE YOUR CODE HERE
-				
+				if (conn != null) {
+					String sql = "UPDATE Username SET PASSWORD=? WHERE LOGIN_NAME=?";
+					System.out.println( "Enter your login name: " );
+					String loginName = scan.next();
+					System.out.println( "Enter new password: " );
+					String pwd = scan.next();
+					System.out.println( "Reenter new password" );
+					String new_pwd = scan.next();
+					
+					if ( pwd.equals(new_pwd) ) {
+						String newLine = String.join("|", loginName, pwd);
+						int row = Demo.edit( sql, newLine );
+						System.out.println( (row > 0) ? "\n> Record is updated successfully!" : "\n> Record is not updated!" );
+					} else {
+						System.err.println( "Password unmatached!" );
+					}
+					
+				} else {
+					System.err.println("> Database not connected!");
+				}
 				break;
-			case 5:
+			}
+			case 5: {
 				/**
 				 * REMOVE RECORD
 				 */
-
-				//PLACE YOUR CODE HERE
-				
+				if ( conn != null ) {
+					String sql = "DELETE FROM Username WHERE LOGIN_NAME=? AND PASSWORD=?";
+					System.out.println( "Enter your login name: " );
+					String loginName = scan.next();
+					System.out.println( "Enter your password: " );
+					String pwd = scan.next();
+					int row = Demo.delete(sql, loginName, pwd);
+					System.out.println( (row > 0) ? "\n> Record is deleted successfully!" : "\n> Record not found!" );		
+				} else {
+					System.err.println("> Database not connected!");
+				}
 				break;
+			}
 			default:
 				break;
 			}
@@ -146,5 +186,41 @@ public class Demo {
 	}
     
 
-    
+	/**
+	 * 
+	 * @param sql
+	 * @param loginName
+	 * @param pwd
+	 * @return
+	 */
+	static private int delete( String sql, String loginName, String pwd ) 
+	{
+		int row = -1;
+		try( PreparedStatement stmt = conn.prepareStatement(sql) ) {
+			stmt.setString(1, loginName);
+			stmt.setString(2, pwd);
+			row = stmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
+		return row;
+	}
+
+	
+	static private int edit( String sql, String newLine ) 
+	{
+		int row = -1;
+		try( PreparedStatement stmt = conn.prepareStatement(sql) ) {
+			String[] split = newLine.split("\\|");
+			String loginName = split[0];
+			String pwd = split[1];
+			stmt.setString(1, pwd);
+			stmt.setString(2, loginName);
+			row = stmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
+		return row;
+	}
+	
 }
