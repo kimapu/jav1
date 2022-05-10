@@ -18,4 +18,4 @@ Exercise:
 
 2.	Write a program that removes a specified string from a text file. Your program reads the file and generates a new file without the specified string, copies the new file to the original file. Prompt the user for a string to be removed and the filename. For example, remove “Java” string in datafile.txt.
 
-3.	Write a program to create a file named ints.txt if it does not exist. Write one hundred integers created randomly into the file using text I/O. Integers are separated by spaces in the file. Using StringTokenizer or Scanner to read the data back from the file and display the sorted data.
+3.	Write a program to create a file named ints.txt if it does not exist. Write one hundred integers created randomly into the file using text I/O. Integers are separated by spaces in the file. Using StringTokenizer/Scanner/Files.readAllLines to read the data back from the file and display the sorted data.
