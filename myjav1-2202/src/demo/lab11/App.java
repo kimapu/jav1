@@ -3,6 +3,8 @@ package demo.lab11;
 import java.util.Scanner;
 
 import solution.lab11.q1.Q1;
+import solution.lab11.q2.Q2;
+import solution.lab11.q3.Q3;
 
 public class App {
 
@@ -15,11 +17,9 @@ public class App {
 			case 1: 
 				Q1.show(); break;
 			case 2:
-				System.out.println( "your attempt!" );
-//				Q2.show(); break;
+				Q2.show(); break;
 			case 3:
-				System.out.println( "your attempt!" );
-//				Q3.show(); break;
+				Q3.show(); break;
 
 			default:
 				throw new IllegalArgumentException("Unexpected value: " +  option );
