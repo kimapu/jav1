@@ -2,11 +2,7 @@ package demo.lab11;
 
 import java.util.Scanner;
 
-import solution.lab9.q3.Q3;
-import solution.lab9.q4.Q4;
-import solution.lab9.q5.Q5;
-import solution.lab9.q6.Q6;
-import solution.lab9.q7.Q7;
+import solution.lab11.q1.Q1;
 
 public class App {
 
@@ -17,8 +13,7 @@ public class App {
 			case 0: 
 				Demo.show(); break;
 			case 1: 
-				System.out.println( "your attempt!" );
-//				Q1.show(); break;
+				Q1.show(); break;
 			case 2:
 				System.out.println( "your attempt!" );
 //				Q2.show(); break;
